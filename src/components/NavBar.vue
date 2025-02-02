@@ -1,17 +1,20 @@
 <script setup lang="ts">
+import { ref } from 'vue'
 
+const isOpen = ref(false)
 </script>
 
 <template>
-    <header class="fixed top-0 left-0 right-0 p-[inherit]">
+    <header class="fixed top-0 left-0 right-0 p-[inherit] md:bg-transparent transition-all" :class="isOpen ? 'bg-white duration-100 ease-in' : 'bg-transparent duration-600 delay-300 ease-out'">
         <div class="max-w-6xl m-auto flex justify-between items-center">
             <div class="flex gap-3">
-                <img class="h-[50px] sm:h-[70px] w-auto" src="/assets/logo-mbpj.png"/>
-                <img class="h-[50px] sm:h-[70px] w-auto md:hidden" src="/assets/logo_selangor.png"/>
+                <img class="h-[40px] sm:h-[70px] w-auto" src="/assets/logo-mbpj.png"/>
+                <img class="h-[40px] sm:h-[70px] w-auto md:hidden" src="/assets/logo_selangor.png"/>
             </div>
             <div class="flex items-center gap-5">
-                <nav class="top-[82px] sm:top-[102px] md:top-0 md:inline md:relative fixed inset-x-0 bg-white md:bg-transparent rounded-b-xl">
-                    <ul class="flex flex-col md:flex-row p-3 gap-2 text-left text-black/80 md:text-white font-medium border-t-2 border-yellow-200 md:border-none">
+                <nav class="top-[72px] sm:top-[102px] md:top-0 md:relative md:max-h-full! fixed inset-x-0 bg-white md:bg-transparent rounded-b-xl overflow-hidden md:overflow-visible transition-all duration-500 ease-in-out"
+                :class="isOpen ? 'max-h-screen' : 'max-h-0'">
+                    <ul class="flex flex-col md:flex-row p-3 md:p-0 gap-2 text-left text-base text-black/80 md:text-white font-medium border-t-1 border-black-500 md:border-none">
                         <li>
                             <a class="block p-2" href="#">Home</a>
                         </li>
@@ -33,9 +36,8 @@
                     </ul>
                 </nav>
                 <div class="inline-flex gap-3 items-center">
+                    <button class="mobile-nav-toggle md:hidden w-[30px] sm:w-[40px] h-[30px] sm:h-[40px] bg-center bg-contain" @click="isOpen = !isOpen" :class="isOpen ? 'bg-[url(/src/assets/menu-close.svg)]' : 'bg-[url(/src/assets/menu-open.svg)]'"><span class="sr-only">Menu</span></button>
                     <img class="w-auto hidden md:block" src="/assets/logo_selangor.png"/>
-                    <svg class=" md:hidden h-[40px] sm:h-[50px]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-                    <svg class="hidden h-[40px] sm:h-[50px]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z" fill="#ffffff"></path> </g></svg>
                 </div>
             </div>
         </div>
