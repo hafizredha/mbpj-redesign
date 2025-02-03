@@ -1,11 +1,12 @@
 <script setup lang="ts">
 import HeroSection from './components/HeroSection.vue'
-// import NavBar from './components/Navbar.vue'
+import Marquee from './components/Marquee.vue'
 </script>
 
 <template>
   <div>
     <HeroSection />
+    <Marquee />
   </div>
   <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>

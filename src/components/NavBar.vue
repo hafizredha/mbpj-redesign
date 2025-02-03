@@ -5,7 +5,7 @@ const isOpen = ref(false)
 </script>
 
 <template>
-    <header class="fixed top-0 left-0 right-0 p-[inherit] md:bg-transparent transition-all" :class="isOpen ? 'bg-white duration-100 ease-in' : 'bg-transparent duration-600 delay-300 ease-out'">
+    <header class="fixed top-0 left-0 right-0 p-[inherit] border-b-1 border-gray-200/20 md:border-none md:bg-transparent transition-all" :class="isOpen ? 'bg-white duration-100 ease-in' : 'bg-transparent duration-600 delay-300 ease-out'">
         <div class="max-w-6xl m-auto flex justify-between items-center">
             <div class="flex gap-3">
                 <img class="h-[40px] sm:h-[70px] w-auto" src="/assets/logo-mbpj.png"/>
