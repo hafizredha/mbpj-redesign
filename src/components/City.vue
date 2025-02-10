@@ -7,7 +7,7 @@
             <div class="flex flex-col gap-6 md:gap-14 justify-center">
                 <div>
                     <h1 class="font-medium text-[32px] sm:text-[52px] leading-none mb-5">About <em class="font-bold">Petaling Jaya</em>: Your Guide to the City</h1>
-                    <p class="leading-5 sm:text-base/6 text-[#666666] font-regular">Discover the vibrant city of Petaling Jaya, from its rich history and thriving community to essential travel tips. Learn about the city's background, the best ways to get here, and explore transportation options that make moving around PJ convenient and accessible.</p>
+                    <p class="leading-5 text-sm sm:text-base/6 text-[#666666] font-regular">Discover the vibrant city of Petaling Jaya, from its rich history and thriving community to essential travel tips. Learn about the city's background, the best ways to get here, and explore transportation options that make moving around PJ convenient and accessible.</p>
                 </div>
                 <div class="inline-flex gap-3 md:gap-6 text-[#092781] font-medium underline">
                     <a href="#" class="flex items-center gap-1">

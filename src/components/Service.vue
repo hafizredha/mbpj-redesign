@@ -43,9 +43,9 @@ const businessServices= ref([
         <div id="myTabContent">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-2 p-4 hidden" id="person" role="tabpanel" aria-labelledby="person-tab">
                 <div v-for="item in peopleServices" class="min:h-[253px] p-4 bg-[#F9FAFC] rounded-lg flex flex-col gap-3 justify-between content-center items-center border-1 border-[#E6E6E6] text-left">
-                    <img class="w-[50px] md:w-[81px]" :src="item.src" :alt="item.title + ' logo'">
+                    <img class="w-[81px]" :src="item.src" :alt="item.title + ' logo'">
                     <p class="text-xs sm:text-base font-semibold">{{ item.title }}</p>
-                    <p class="text-[10px] sm:text-xs text-black/50 font-medium w-full">{{ item.desc }}</p>
+                    <p class="text-xs text-black/50 font-medium w-full">{{ item.desc }}</p>
                     <a href="#" class="w-full mt-2">
                         <span class="flex justify-between items-center text-xs text-[#D10C18] font-medium">
                             <p class="text-[10px] sm:text-xs underline">View More</p>
@@ -58,8 +58,8 @@ const businessServices= ref([
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-2 p-4 hidden" id="business" role="tabpanel" aria-labelledby="business-tab">
                 <div v-for="item in businessServices" class="min:h-[253px] p-4 bg-[#F9FAFC] rounded-lg flex flex-col gap-3 justify-between content-center items-center border-1 border-[#E6E6E6] text-left">
-                    <img class="w-[50px] w-[81px]" :src="item.src" :alt="item.title + ' logo'">
-                    <p class="text-xs sm:text-base font-semibold">{{ item.title }}</p>
+                    <img class="w-[81px]" :src="item.src" :alt="item.title + ' logo'">
+                    <p class="text-base font-semibold">{{ item.title }}</p>
                     <p class="text-[10px] sm:text-xs text-black/50 font-medium w-full">{{ item.desc }}</p>
                     <a href="#" class="w-full mt-2">
                         <span class="flex justify-between items-center text-xs text-[#D10C18] font-medium">
