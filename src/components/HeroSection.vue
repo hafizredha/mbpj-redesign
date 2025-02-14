@@ -3,7 +3,7 @@ import NavBar from "./NavBar.vue"
 </script>
 
 <template>
-    <div class="w-full h-[90dvh] bg-[url(assets/hero-image.webp)] bg-top bg-cover bg-no-repeat">
+    <div class="w-full h-[90dvh] bg-[url(/assets/hero-image.webp)] bg-top bg-cover bg-no-repeat">
         <div class="h-full p-4 bg-black/35 text-center content-center justify-items-center">
             <NavBar/>
             <div class="md:w-2xl flex flex-col gap-6 m-auto">
