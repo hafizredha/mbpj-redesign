@@ -42,22 +42,22 @@ onUnmounted(() => {
                     <ul class="flex flex-col md:flex-row p-3 md:p-0 gap-2 text-left text-base text-black/80 font-medium border-t-1 border-black-500 md:border-none duration-600 delay-300 ease-out"
                     :class="isScrolled ? 'md:text-black/80' : 'md:text-white'">
                         <li>
-                            <a class="block p-2" href="#">Home</a>
+                            <a class="block p-2 hover:underline underline-offset-10 decoration-2" href="#">Home</a>
                         </li>
                         <li>
-                            <a class="block p-2" href="#">MBPJ</a>
+                            <a class="block p-2 hover:underline underline-offset-10 decoration-2" href="#">MBPJ</a>
                         </li>
                         <li>
-                            <a class="block p-2" href="#">People</a>
+                            <a class="block p-2 hover:underline underline-offset-10 decoration-2" href="#">People</a>
                         </li>
                         <li>
-                            <a class="block p-2" href="#">Business</a>
+                            <a class="block p-2 hover:underline underline-offset-10 decoration-2" href="#">Business</a>
                         </li>
                         <li>
-                            <a class="block p-2" href="#">Visitor</a>
+                            <a class="block p-2 hover:underline underline-offset-10 decoration-2" href="#">Visitor</a>
                         </li>
                         <li>
-                            <a class="block p-2" href="#">Contact Us</a>
+                            <a class="block p-2 hover:underline underline-offset-10 decoration-2" href="#">Contact Us</a>
                         </li>
                     </ul>
                 </nav>
