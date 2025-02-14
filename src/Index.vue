@@ -4,6 +4,7 @@ import Marquee from './components/Marquee.vue'
 import Service from './components/Service.vue'
 import City from './components/City.vue'
 import News from './components/News.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import News from './components/News.vue'
     <Service />
     <City />
     <News />
+    <Footer />
   </div>
   <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>

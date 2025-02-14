@@ -45,7 +45,7 @@ const businessServices= ref([
                 <div v-for="item in peopleServices" class="min:h-[253px] p-4 bg-[#F9FAFC] rounded-lg flex flex-col gap-3 justify-between content-center items-center border-1 border-[#E6E6E6] text-left">
                     <img class="w-[81px]" :src="item.src" :alt="item.title + ' logo'">
                     <p class="text-xs sm:text-base font-semibold">{{ item.title }}</p>
-                    <p class="text-xs text-black/50 font-medium w-full">{{ item.desc }}</p>
+                    <p class="text-xs text-black/50 font-medium w-full line-clamp-3">{{ item.desc }}</p>
                     <a href="#" class="w-full mt-2">
                         <span class="flex justify-between items-center text-xs text-[#D10C18] font-medium">
                             <p class="text-[10px] sm:text-xs underline">View More</p>
@@ -60,7 +60,7 @@ const businessServices= ref([
                 <div v-for="item in businessServices" class="min:h-[253px] p-4 bg-[#F9FAFC] rounded-lg flex flex-col gap-3 justify-between content-center items-center border-1 border-[#E6E6E6] text-left">
                     <img class="w-[81px]" :src="item.src" :alt="item.title + ' logo'">
                     <p class="text-base font-semibold">{{ item.title }}</p>
-                    <p class="text-[10px] sm:text-xs text-black/50 font-medium w-full">{{ item.desc }}</p>
+                    <p class="text-xs text-black/50 font-medium w-full line-clamp-3">{{ item.desc }}</p>
                     <a href="#" class="w-full mt-2">
                         <span class="flex justify-between items-center text-xs text-[#D10C18] font-medium">
                             <p class="text-[10px] sm:text-xs underline">View More</p>
@@ -72,6 +72,6 @@ const businessServices= ref([
                 </div>
             </div>
         </div>
-        <a href="#" class="bg-[#092781] hover:bg-white w-fit m-auto text-white text-xs sm:text-base hover:text-black hover:border-1 px-4 sm:px-8 py-3 rounded-lg font-medium transition">See all services</a>
+        <a href="#" class="bg-[#092781] hover:bg-white w-fit m-auto text-white text-sm sm:text-base hover:text-black border-2 border-white hover:border-black px-4 sm:px-8 py-3 rounded-lg font-medium transition">See all services</a>
     </div>
 </template>
