@@ -25,7 +25,7 @@ onUnmounted(() => {
         :class="isOpen ? 'opacity-80 pointer-events-auto' : 'opacity-0 pointer-events-none'"
         @click="isOpen = false"
     ></div>
-    <header class="fixed top-0 left-0 right-0 p-[inherit] border-b-1 border-gray-200/20 transition-all z-99999 overflow-hidden drop-shadow-md" 
+    <header class="fixed top-0 left-0 right-0 p-[inherit] border-b-1 border-gray-200/20 transition-all z-99999 drop-shadow-md" 
     :class="[
         isOpen || isScrolled ? 'bg-white duration-100 ease-in' : 'bg-transparent duration-600 delay-300 ease-out',
     ]">
